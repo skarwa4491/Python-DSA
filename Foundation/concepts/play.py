@@ -1,7 +1,5 @@
+s ="abcde"
 
-numbers = [1, 3, 4, 2]
- 
-# Sorting list of Integers in descending
-numbers.sort(reverse = True)
- 
-print(numbers)
+s = s[0:1]+s[2:len(s)]
+
+print(s)

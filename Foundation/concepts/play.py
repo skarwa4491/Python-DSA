@@ -1,5 +1,2 @@
-s ="abcde"
-
-s = s[0:1]+s[2:len(s)]
-
-print(s)
+mappings ={i: True if i%2==0 else False for i in range(10)}
+print(mappings)

@@ -24,11 +24,8 @@ class Solution():
                 j+=1
             i+=1
         return dp
-            
-    
 
 n = int(input())
 arr = [int(input()) for _ in range(n)]
 target = int(input())
 print(Solution().getSumSubSet(arr,target))
-    

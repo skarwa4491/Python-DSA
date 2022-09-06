@@ -29,8 +29,10 @@ class Solution():
             if board[i][j]=="Q":
                 return False
             i-=1
+            
         i = row-1
         j = col-1
+        
         while j>=0 and i>=0 :
             if board[i][j]=="Q":
                 return False

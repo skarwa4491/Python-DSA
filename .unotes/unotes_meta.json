@@ -1,0 +1,64 @@
+{
+  "name": "",
+  "isOrdered": true,
+  "folders": {
+    "BinaryTrees": {
+      "name": "BinaryTrees",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "Foundation": {
+      "name": "Foundation",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "Hacker rank": {
+      "name": "Hacker rank",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "Leetcode": {
+      "name": "Leetcode",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "Level Up": {
+      "name": "Level Up",
+      "isOrdered": true,
+      "folders": {
+        "Dynamic_programming": {
+          "name": "Dynamic_programming",
+          "isOrdered": true,
+          "folders": {},
+          "files": {}
+        },
+        "arrays and strings": {
+          "name": "arrays and strings",
+          "isOrdered": true,
+          "folders": {},
+          "files": {}
+        },
+        "hash_map": {
+          "name": "hash_map",
+          "isOrdered": true,
+          "folders": {},
+          "files": {
+            "squire release like": 0
+          }
+        }
+      },
+      "files": {}
+    },
+    "reliance": {
+      "name": "reliance",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    }
+  },
+  "files": {}
+}

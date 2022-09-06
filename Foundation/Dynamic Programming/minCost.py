@@ -1,7 +1,9 @@
 from typing import List
+
+
 class Solution():
-    def find_min_cost(self, costs :List[List[int]]) -> int:
-        dp = [[0 for _ in range(len(costs[0]))] for _ in range(len(costs))] 
+    def find_min_cost(self, costs: List[List[int]]) -> int:
+        dp = [[0 for _ in range(len(costs[0]))] for _ in range(len(costs))]
         i = len(costs)-1
         while i >= 0:
             j = len(costs[i])-1
@@ -17,10 +19,11 @@ class Solution():
                 j -= 1
             i -= 1
         return dp[0][0]
-                    
+
+
 # n = int(input())
 # m = int(input())
-# costs = []    
+# costs = []
 # for i in range(0, n):
 #     ar = []
 #     l = input()
@@ -29,11 +32,11 @@ class Solution():
 #         val = int(lst[j])
 #         ar.append(val)
 #         costs.append(ar)
-costs = [[0, 1 , 4, 2, 8, 2], 
-[4, 3, 6, 5, 0, 4], 
-[1, 2, 4, 1, 4, 6], 
-[2, 0, 7, 3, 2, 2], 
-[3, 1, 5, 9, 2, 4, ], 
-[2, 7, 0, 8, 5, 1]]
+costs = [[0, 1, 4, 2, 8, 2],
+         [4, 3, 6, 5, 0, 4],
+         [1, 2, 4, 1, 4, 6],
+         [2, 0, 7, 3, 2, 2],
+         [3, 1, 5, 9, 2, 4],
+         [2, 7, 0, 8, 5, 1]]
 
 print(Solution().find_min_cost(costs))

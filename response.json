@@ -1,0 +1,22 @@
+{
+	"user_profile": {
+		"first_name": "Swapnil",
+		"last_name": "Karwa",
+		"age": 30,
+		"gender": "male",
+		"email": "abc@example.com"
+	},
+	"login_history": [{
+			"time": "2022-08-29:11:30:45",
+			"device": "chrome-version-112"
+		},
+		{
+			"time": "2022-08-26:11:30:45",
+			"device": "firefox-version-93"
+		},
+		{
+			"time": "2022-08-21:11:30:45",
+			"device": "android-v11-vivo-device-x"
+		}
+	]
+}

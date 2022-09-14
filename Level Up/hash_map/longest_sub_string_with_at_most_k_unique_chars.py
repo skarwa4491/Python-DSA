@@ -4,9 +4,6 @@
 '''
 
 
-from operator import length_hint
-
-
 def max_length(s, k):
     j = -1
     map = dict()

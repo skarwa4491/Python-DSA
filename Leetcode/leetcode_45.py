@@ -1,5 +1,5 @@
 class Solution:
-    def jump(self, nums: List[int]) -> int:
+    def jump(self, nums) -> int:
         dp =[0]*(len(nums))
         dp[-1] = 0
         i = len(nums)-2
@@ -13,5 +13,7 @@ class Solution:
             
             dp[i] = minimum + 1
             i-=1
+        
         print(dp)
         return dp[0]
+Solution().jump([2,3,1,1,4])

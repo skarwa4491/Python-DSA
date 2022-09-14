@@ -1,6 +1,3 @@
-from operator import truediv
-
-
 def balanced(str):
     stack = []
     for ch in str:

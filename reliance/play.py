@@ -5,10 +5,12 @@ def solution(str):
         if(str[i]==str[i+1]):
             temp +=str[i]
         else:
-            result.append(temp)
+            if temp != '':
+                result.append(temp)
             temp =''
     if temp:
         result.append(temp)
-    print(len(result))
     
-solution("abbc")
+    return len(result)
+    
+solution("aabbc")

@@ -1,10 +1,10 @@
 import sys
+from urllib.request import ProxyDigestAuthHandler
 
 
-import sys
 class Solution:
     def maxProfit(self, prices) -> int:
-        profit =0
+        profit = 0
         max_profit = 0
         min_ = sys.maxsize
         for i in range(0, len(prices)):
@@ -15,4 +15,18 @@ class Solution:
                 max_profit = profit
         return max_profit
 
-print(Solution().maxProfit([7,6,4,3,1]))
+    def max_profit(self, prices):
+        profit = 0
+        max_profit = 0
+        _min = sys.maxsize
+        for price in prices:
+            if price <= _min:
+                _min = price
+            profit = price - _min
+            if profit >= max_profit:
+                max_profit = profit
+        print(max_profit)
+                
+
+
+print(Solution().max_profit([7,1,5,3,6,4]))

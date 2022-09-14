@@ -1,4 +1,5 @@
 from itertools import count
+import tarfile
 
 
 class Solution():
@@ -10,23 +11,27 @@ class Solution():
     '''
 
     def min_jumps(self, dest):
-        jumps = 1
+        jumps = 0
         travelled_distance = 0
         while(travelled_distance < dest):
-            travelled_distance += jumps
             jumps += 1
+            travelled_distance += jumps
+            
+        if travelled_distance == dest:
+            return jumps
+            
         extra_distance = abs(dest - travelled_distance)
 
         if extra_distance % 2 == 0:
-            return jumps-1
+            return jumps
         else:
             jumps += 1
             travelled_distance += jumps
-            extra_distance = travelled_distance - jumps
+            extra_distance = abs(dest - travelled_distance)
             if extra_distance % 2 == 0:
-                return jumps-1
+                return jumps
             else:
                 return jumps+1
 
 
-print(Solution().min_jumps(9))
+print(Solution().min_jumps(4))

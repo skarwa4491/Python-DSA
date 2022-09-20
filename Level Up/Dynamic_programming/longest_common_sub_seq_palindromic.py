@@ -35,8 +35,10 @@ def longest_palindromic_dp(s):
                     dp[i][j] = max(dp[i-1][j], dp[i][j-1])
             i += 1
             j += 1
-    print(dp[-1][-1])
+    
+    for d in dp:
+        print(d)
 
 
-s = 'abcgackbc'
+s = 'abcbd'
 print(longest_palindromic_dp(s))

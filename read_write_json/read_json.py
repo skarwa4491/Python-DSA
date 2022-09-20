@@ -11,10 +11,20 @@ def read_data(data , tab):
             read_data(val,tab)
         else:
             print(tab,key,":",val)
-        
-with open(os.getcwd()+'/read_write_json/sample.json','r') as f:
+
+
+
+with open(os.path.dirname(os.path.abspath(__file__))+'/sample.json','r') as f:
     data_string = f.read()
     data = json.loads(data_string)
     print()
     pprint(data)
+    
+    
+    
+# with open(os.getcwd()+'/read_write_json/sample.json','r') as f:
+#     data_string = f.read()
+#     data = json.loads(data_string)
+#     print()
+#     pprint(data)
     

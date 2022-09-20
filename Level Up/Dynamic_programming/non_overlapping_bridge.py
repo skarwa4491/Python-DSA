@@ -11,7 +11,7 @@ import sys
 
 
 def find_non_overlapping_bridge(arr):
-    arr.sort(key=lambda a: a[0])
+    arr.sort(key=lambda a: a[0]) # sort on basis of north ends
     dp = [0]*len(arr)
     for i in range(0, len(arr)):
         _max = sys.maxsize * -1

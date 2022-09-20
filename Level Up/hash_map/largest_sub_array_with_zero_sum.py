@@ -11,6 +11,7 @@ def max_sub_array(arr):
         if sum in map.keys():
             prev_index = map[sum]
             length = i - prev_index
+            print(arr[prev_index+1:i+1])
             if length >= maxi:
                 maxi = length
         else:

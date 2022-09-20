@@ -1,6 +1,3 @@
-from itertools import count
-
-
 def count_sub_array(arr):
     '''
         count of sub arrays with extactly k distinct elements

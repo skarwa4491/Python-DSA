@@ -19,7 +19,7 @@ class Solution():
         i =0
         while i<len(elements):
             temp = elements[i]
-            inverse[temp] =i
+            inverse[temp] = i
             i+=1
         return inverse
 

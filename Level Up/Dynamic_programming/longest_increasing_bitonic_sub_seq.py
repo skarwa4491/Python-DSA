@@ -9,7 +9,7 @@ def longest_biotonic_sub(arr):
     inc[0] = 1
     dec[-1] = 1
     # find length of longest increasing sub from left to right
-    for i in range(0, len(arr)):
+    for i in range(1, len(arr)):
         max_ = sys.maxsize * -1
         for j in range(0, i):
             if arr[i] > arr[j]:
@@ -18,7 +18,7 @@ def longest_biotonic_sub(arr):
         if max_ != sys.maxsize*-1:
             inc[i] = 1+max_
     # find length of longest increasing sub from right to left
-    for i in range(len(arr)-1, -1, -1):
+    for i in range(len(arr)-2, -1, -1):
         max_ = sys.maxsize * -1
         for j in range(len(arr)-1, i, -1):
             if arr[i] > arr[j]:

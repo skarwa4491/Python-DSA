@@ -7,7 +7,7 @@ Note -> Rotation is not allowed.
 
 
 def get_max_count(arr):
-    arr.sort(key=lambda a: a[0])
+    arr.sort(key=lambda a: a[0]) # sort on basis of width
     dp = [0]*len(arr)
     for i in range(0, len(arr)):
         _max = 0

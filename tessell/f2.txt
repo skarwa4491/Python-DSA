@@ -1,0 +1,41 @@
+conftest -->
+    1. session scopped fixture
+        1 . extract all data of excel
+            {
+                sheet_1 :{
+                    1 :{TC : tc_id,
+                        data:{
+
+                        }
+                    },
+                    2:{
+                        TC:tc_id:
+                        data : {
+
+                        }
+                    }
+                }
+            }
+        
+    2. function scopped fixture:
+        base_url
+
+Test package
+    1. test classes
+    2. base test(parent of all test classes,
+    uses fixtures)
+        ojects of request classes
+    3. validation classes
+
+Request package:
+    1. request classes
+    2. builder classes
+    3. base request
+            
+
+resuources:
+    excel_utils
+        setter getters , get_test_case_data(sheet_name , tc_id)
+    URI's
+
+excel sheet

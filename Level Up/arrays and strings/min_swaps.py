@@ -1,6 +1,3 @@
-from itertools import count
-
-
 def solution(arr):
     '''
         min swaps to sort an array

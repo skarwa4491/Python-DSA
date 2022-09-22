@@ -1,5 +1,4 @@
 class Parent2:
-    
     def display():
         print('Parent2 first name')
         

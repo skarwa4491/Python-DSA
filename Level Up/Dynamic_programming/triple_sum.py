@@ -1,7 +1,6 @@
 def solution(arr, target):
     def two_sum(arr, target):
         map = dict()
-        
         for i in range(len(arr)):
             ans = []
             compliment = target - arr[i]

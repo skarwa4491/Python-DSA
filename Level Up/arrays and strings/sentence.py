@@ -1,7 +1,9 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 
 class Solution():
-    
+    '''
+        reverse words of a given sentense
+    '''
     def reverse_words(self,sentence):
         sentence_a = sentence.split(' ')
         for idx,word in enumerate(sentence_a,start=0):

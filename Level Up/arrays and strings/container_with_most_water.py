@@ -1,6 +1,4 @@
-import math
 import sys
-from turtle import width
 class Solution():
     
     def get_max_water_bf(sef, list):

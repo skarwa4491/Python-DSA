@@ -28,3 +28,4 @@ class solution:
         return True
 
 print(solution().valid_palindrome('abca'))
+print(solution().valid_palindrome('ab'))
